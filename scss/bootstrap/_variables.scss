@@ -86,7 +86,11 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "LingyaDistrict":#8A82CC,
+  "SanminDistrict":#FFA782,
+  "XinxingDistrict":#F5D005,
+  "Yancheng_District":#559AC8
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -267,7 +271,9 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  26:26%,
   50: 50%,
+  68:68%,
   100: 100%
 ) !default;
 // scss-docs-end position-map

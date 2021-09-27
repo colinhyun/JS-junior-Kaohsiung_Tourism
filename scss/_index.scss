@@ -1,3 +1,19 @@
 .gogo{
     color: red;
 }
+
+/* opacity select下拉式選單要透明 */
+.opacitySelect{
+    /*
+    opacity:0.5;
+    background-color: white;
+    */
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    //opacity: 0.3; 
+}
+
+.border-dashed{
+    border-top:1px #559AC8 dashed;
+}
