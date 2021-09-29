@@ -1,5 +1,7 @@
 var url = "https://api.kcg.gov.tw/api/service/get/9c8e1450-e833-499c-8320-29b36b7ace5c";
 var button_group_click = document.querySelector('.button-group-click');
+var selectDistrict = document.querySelector('.selectDistrict');
+var text_BigTitle = document.querySelector('.text_BigTitle');
 var list = document.querySelector('.list');
 
 
@@ -22,6 +24,7 @@ function updataListButton(e) {
         // 取得 button-group-click 裡面 所有button的資料
         var tabs = document.querySelectorAll('.button-group-click button');
         var type = e.target.value;
+        text_BigTitle.textContent = type;
         if (type === "苓雅區") {
             renderData(data, type);
         } else if (type === "三民區") {
@@ -31,6 +34,86 @@ function updataListButton(e) {
         } else if (type === "鹽埕區") {
             renderData(data, type);
         }
+    }
+}
+
+function updataListSelect(e) {
+    //console.log('updataListSelect okok');
+    var type = e.target.value;
+    console.log(type);
+    text_BigTitle.textContent = type;
+    switch (type) {
+        case "三民區":
+            renderData(data,type);
+            break;
+        case "仁武區":
+            renderData(data,type);
+            break;
+        case "內門區":
+            renderData(data,type);
+            break;
+        case "六龜區":
+            renderData(data,type);
+            break;
+        case "前金區":
+            renderData(data,type);
+            break;
+        case "前鎮區":
+            renderData(data,type);
+            break;
+        case "大樹區":
+            renderData(data,type);
+             break;
+        case "小港區":
+            renderData(data,type);
+            break;
+        case "岡山區":
+            renderData(data,type);
+            break;
+        case "左營區":
+            renderData(data,type);
+            break;
+        case "新興區":
+            renderData(data,type);
+            break;
+        case "旗津區":
+            renderData(data,type);
+            break;
+        case "杉林區":
+            renderData(data,type);
+            break;
+        case "梓官區":
+            renderData(data,type);
+            break;
+        case "楠梓區":
+            renderData(data,type);
+            break;
+        case "田寮區":
+            renderData(data,type);
+            break;
+        case "甲仙區":
+            renderData(data,type);
+            break;
+        case "美濃區":
+            renderData(data,type);
+            break;
+        case "苓雅區":
+            renderData(data,type);
+            break;
+        case "茂林區":
+            renderData(data,type);
+            break;
+        case "茄萣區":
+            renderData(data,type);
+            break;
+        case "鳳山區":
+            renderData(data,type);
+            break;
+        case "鼓山區":
+            renderData(data,type);
+            break;
+        default:
+            break;
     }
 }
 
@@ -85,7 +168,7 @@ function renderData(data,type) {
                                     <p class="mt-1">` + Add + `</p>
                                   </div>
                               </div>
-                              <div class="d-flex justify-content-between">
+                              <div class="d-flex justify-content-between ">
                                   <div class="d-flex ">
                                       <div>
                                         <img src="/images/icons_phone.png" class="" alt="gg">
@@ -113,3 +196,4 @@ function renderData(data,type) {
 }
 
 button_group_click.addEventListener('click', updataListButton);
+selectDistrict.addEventListener('change',updataListSelect);
