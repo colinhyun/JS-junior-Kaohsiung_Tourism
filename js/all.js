@@ -163,7 +163,7 @@ function renderData(data,type) {
                               <div class="card-body">
                                 <div class="d-flex ">
                                     <div>
-                                      <img src="/images/icons_clock.png" class="" alt="gg">
+                                      <img src="images/icons_clock.png" class="" alt="gg">
                                     </div>
                                     <div>
                                       <p class="mt-1">` + Opentime + `</p>
@@ -171,7 +171,7 @@ function renderData(data,type) {
                                 </div>
                                 <div class="d-flex ">
                                   <div>
-                                    <img src="/images/icons_pin.png" class="" alt="gg">
+                                    <img src="images/icons_pin.png" class="" alt="gg">
                                   </div>
                                   <span></span>
                                   <div>
@@ -181,7 +181,7 @@ function renderData(data,type) {
                               <div class="d-flex justify-content-between ">
                                   <div class="d-flex ">
                                       <div>
-                                        <img src="/images/icons_phone.png" class="" alt="gg">
+                                        <img src="images/icons_phone.png" class="" alt="gg">
                                       </div>
                                       <div>
                                         <p class="mt-1">` + Tel + `</p>
@@ -189,7 +189,7 @@ function renderData(data,type) {
                                   </div>
                                   <div class="d-flex ">
                                       <div>
-                                        <img src="/images/icons_tag.png" class="" alt="gg">
+                                        <img src="images/icons_tag.png" class="" alt="gg">
                                       </div>
                                       <div>
                                         <p class="mt-1">` + Ticketinfo + `</p>
