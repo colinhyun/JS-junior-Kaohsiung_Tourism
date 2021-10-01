@@ -138,6 +138,10 @@ function renderData(data,type) {
         // 圖片網址
         var Picture1 = data.data.XML_Head.Infos.Info[i].Picture1;
 
+        var Name = data.data.XML_Head.Infos.Info[i].Name;
+
+
+
         // 假如 Add 裡面有 type(XX區(從上面updataList帶過來的type)) === 6 代表 Add 是 type 區
         if (Add.indexOf(type) === 6) {
 
@@ -149,11 +153,17 @@ function renderData(data,type) {
             // 組字串
             str += `<div class="col">
                             <div class="card h-100">
-                              <img src="` + Picture1 + `" class="card-img-top" alt="...">
+                                <div class="position-relative">
+                                    <img src="` + Picture1 + `" class="card-img-top" alt="...">
+                                    <div class="position-absolute bottom-0 w-100 d-flex justify-content-between">
+                                        <h3 class="text-white">` + Name + `</h3>
+                                        <span class="text-white">` + type + `</span>
+                                    </div>
+                                </div>
                               <div class="card-body">
                                 <div class="d-flex ">
                                     <div>
-                                      <img src="/images/icons_clock.png" class="" alt="gg">
+                                      <img src="images/icons_clock.png" class="" alt="gg">
                                     </div>
                                     <div>
                                       <p class="mt-1">` + Opentime + `</p>
@@ -161,7 +171,7 @@ function renderData(data,type) {
                                 </div>
                                 <div class="d-flex ">
                                   <div>
-                                    <img src="/images/icons_pin.png" class="" alt="gg">
+                                    <img src="images/icons_pin.png" class="" alt="gg">
                                   </div>
                                   <span></span>
                                   <div>
@@ -171,7 +181,7 @@ function renderData(data,type) {
                               <div class="d-flex justify-content-between ">
                                   <div class="d-flex ">
                                       <div>
-                                        <img src="/images/icons_phone.png" class="" alt="gg">
+                                        <img src="images/icons_phone.png" class="" alt="gg">
                                       </div>
                                       <div>
                                         <p class="mt-1">` + Tel + `</p>
@@ -179,7 +189,7 @@ function renderData(data,type) {
                                   </div>
                                   <div class="d-flex ">
                                       <div>
-                                        <img src="/images/icons_tag.png" class="" alt="gg">
+                                        <img src="images/icons_tag.png" class="" alt="gg">
                                       </div>
                                       <div>
                                         <p class="mt-1">` + Ticketinfo + `</p>
